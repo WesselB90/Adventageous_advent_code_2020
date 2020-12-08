@@ -90,7 +90,7 @@ results <- mapply(Seat_finder, boarding_passes$V1, max_row_num, max_col_num)
 ## We'll just stuff them into a transposed dataframe so that the boarding-passes are the rows and the extracted values are the columns.
 results <- data.frame(t(results))
 
-## Since mapply adds list elements to a dataframe, we´ll just unlist the column before unleahsing the max-function on it to find our riddle's answer.
+## Since mapply adds list elements to a dataframe, weÂ´ll just unlist the column before unleahsing the max-function on it to find our riddle's answer.
 cat("The seat with the highest number in the list is: \n*drumroll*\n",max(unlist(results$Seat_id)))
 
 
